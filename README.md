@@ -131,6 +131,7 @@ stdio.h
 stdlib.h
 
 Graph Representation:
+
 Edge List Representation
 
 Each pipe is stored using a structure that contains its capacity, cost, and flow history.
@@ -142,6 +143,7 @@ Each pipe is stored using a structure that contains its capacity, cost, and flow
 For each hour:
 
 Dynamic cost update = O(E)
+
 Pipe selection = O(E)
 
 Where E represents the number of pipes.
@@ -169,16 +171,25 @@ O(E)
 ## 📊 Example Input
 
 Enter number of nodes: 4
+
 Enter number of pipes: 5
 
+
 Pipe 1: 1 2 120 1
+
 Pipe 2: 1 3 100 1.2
+
 Pipe 3: 2 4 110 0.8
+
 Pipe 4: 3 4 90 0.9
+
 Pipe 5: 2 3 60 1.5
 
+
 Enter source node: 1
+
 Enter sink node: 4
+
 
 Enter total water volume: 1000
 
@@ -189,15 +200,20 @@ Enter total water volume: 1000
 HYDRA-24 Water Distribution Simulation
 
 Hour 1
+
 Pipe 1 → 2 used
+
 Flow = 41.67
+
 Cost = 41.67
+
 
 ...
 
 Simulation Complete
 
 Total Delivered = 1000.00 L
+
 Total Cost = 932.87
 
 ---
@@ -233,6 +249,7 @@ Total Cost = 932.87
 ## 👨‍💻 Author
 
 Deepak Bharathwaj S
+
 CH.SC.U4CSE24015
 
 HYDRA-24 - Dynamic Water Distribution Optimization
