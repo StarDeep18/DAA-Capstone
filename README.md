@@ -5,8 +5,11 @@
 HYDRA-24 is a simulation program that models a city water distribution network and determines how water should be delivered through pipes over 24 hours while minimizing the total transportation cost.
 
 Each pipe in the network has:
+
 • A maximum capacity (how much water it can carry per hour)
+
 • A base cost per liter
+
 
 However, pipes experience mechanical stress under continuous operation. This increases the pipe cost dynamically. The program, therefore, updates pipe costs hourly based on recent usage and selects the pipe with the lowest dynamic cost to deliver water.
 
@@ -19,15 +22,23 @@ The objective is to deliver the required water volume while keeping the total co
 The water distribution network is modeled as a directed graph.
 
 • Nodes represent water junctions in the city
+
 • Edges (pipes) represent connections between nodes
+
 • Source (S) represents the central reservoir
+
 • Sink (T) represents the residential district
+
 
 Each pipe stores the following information:
 • Capacity
+
 • Base cost
+
 • Dynamic cost
+
 • Flow history for the previous three hours
+
 
 ---
 
@@ -39,8 +50,11 @@ C(e,t) = BaseCost + (3 × Flow(t−1) + 2 × Flow(t−2) + Flow(t−3)) / 6
 
 Where:
 • Flow(t−1) is the flow in the previous hour
+
 • Flow(t−2) is the flow two hours ago
+
 • Flow(t−3) is the flow three hours ago
+
 
 Recent usage contributes more stress to the pipe, which increases its cost temporarily.
 If a pipe is not used for several hours, its cost gradually returns to its base cost.
@@ -191,19 +205,28 @@ Total Cost = 932.87
 ## 🚀 Key Features
 
 • Dynamic pipe cost modeling
+
 • Stress-aware water distribution
+
 • Capacity constraint handling
+
 • 24-hour simulation
+
 • Cost-optimized water flow
+
 
 ---
 
 ## 🌍 Applications
 
 • Smart city water management systems
+
 • Infrastructure stress monitoring
+
 • Utility cost optimization
+
 • Resource scheduling in networks
+
 
 ---
 
